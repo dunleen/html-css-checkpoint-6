@@ -13,15 +13,15 @@ body
 header 
 {
 	display: grid;
-	grid-template-columns: 1fr auto 1fr;
+	grid-template-columns: 1fr auto 100px 1fr;
 	align-items: center;
 	padding: 20px 40px;
 	gap: 20px;
 }
 .header 
 {
-	justify-self: center;
-
+  grid-column: 1;
+	justify-self: start;
 	font-family: system-ui;
 	font-size: 28px;
 	font-weight: 900;
@@ -41,7 +41,7 @@ nav ul
 	font-family: system-ui;
 	font-size: 18px;
 	font-weight: 600;
-	letter-spacing: 1	px;
+	letter-spacing: 1px;
 	color: #111
 }
 
@@ -61,17 +61,28 @@ nav a::after
 }
 .header-R 
 {
+  grid-column: 3;
   justify-self: end;
   display: flex;
+  gap: 20px;
   align-items: center;
   gap: 20px;
+  
 }
+
 
 
 .cart 
 {
   position: relative;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.cart img 
+{
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 .burger
@@ -80,4 +91,13 @@ nav a::after
   background: none;
   border: none;
   cursor: pointer;
+}
+.burger img 
+{
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  display: block;
 }
