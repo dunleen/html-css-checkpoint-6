@@ -8,34 +8,30 @@ body
 {
 	background: #fff;
 	color: #111;
-	
 }
 header 
 {
 	display: grid;
   grid-template-columns: 1fr auto 1fr;
 	align-items: center;
-	padding: 20px 40px;
+	padding: 40px 40px;  
 	gap: 20px;
 }
-.header 
+.header-left
 {
   grid-column: 1;
-  justify-self: center;
-	font-family: system-ui;
-	font-size: 28px;
-	font-weight: 900;
-	letter-spacing: 5px;
+  justify-self: end;
 	color: #111
 }
 nav 
 {
   grid-column: 2;
+  margin-left: 215px;
 }
 nav ul 
 {
   display: flex;
-  gap: 40px;
+  gap: 40px;  /* растояние между центральными плашками*/
   list-style: none;
 	font-family: system-ui;
 	font-size: 18px;
@@ -48,7 +44,8 @@ nav a
 {
   text-decoration: none;
   color: #111;
-  font-size: 15px;
+  font-size: 13px;   /* размер центральных плашек */
+  font-weight: 700;  /* жирность центральных плашек */
   text-transform: uppercase;
 }
 nav a::after 
@@ -58,7 +55,7 @@ nav a::after
   color: #111;
   margin-left: 10px;
 }
-.header-R 
+.header-right
 {
   grid-column: 3;
   display: flex;
